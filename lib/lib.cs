@@ -488,12 +488,12 @@ public class CharacterLib {
       if (!foundRoom) return;
     }
     registered.Add(character);
-    RandomGenerationSettingsSOData random = GameObject.FindFirstObjectByType<DialogCommandsInstance>()._charactersSODataProvider.Cast<ResourceMother>()._randomGenerationSettingsData;
+    /*RandomGenerationSettingsSOData random = GameObject.FindFirstObjectByType<DialogCommandsInstance>()._charactersSODataProvider.Cast<ResourceMother>()._randomGenerationSettingsData;
     random._randomGuestsNumberByNights[1] = 0;
     GameEventsManager mang = GameObject.FindFirstObjectByType<DialogCommandsInstance>()._gameEventsManager.Cast<GameEventsManager>();
     CharacterDingDongEvent ev = new((ECharacterType)63, new GameEventConditions("entrance.Neighbour.0", (Il2CppStructArray<int>)(int[])[0], ETimeOfDay.Night, 1f, (Il2CppStringArray)(string[])[], false));
     Il2CppSystem.ValueTuple<CharacterDingDongEvent, int> tuple = new(ev, 3);
-    mang._preDingDongEvents[1]._items[1].Item1.Character = (ECharacterType)63;
+    mang._preDingDongEvents[1]._items[1].Item1.Character = (ECharacterType)63;*/
   }
 
   internal static void AddObjectView(CustomCharacter character, ARoomView roomView)
