@@ -13,7 +13,7 @@ dialogue is written using YarnSpinner, the game uses 2.4 specifically (as does t
 
 when positioning characters in rooms, it's recommended to use UnityExplorer as there's no easy way to do it currently
 
-you can find dialogue-related info in [dialogue_info.md](https://github.com/tairasoul/NINAH.CharacterLib/dialogue_info.md)
+you can find dialogue-related info in [dialogue_info.md](https://github.com/tairasoul/NINAH.CharacterLib/blob/main/dialogue_info.md)
 
 ## node-related info
 
