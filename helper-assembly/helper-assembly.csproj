@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>tairasoul.ninah.characterlib.helperassembly</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../../git-builds/YarnSpinner/YarnSpinner.Compiler/YarnSpinner.Compiler.csproj" >
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="../../../../git-builds/YarnSpinner/YarnSpinner/YarnSpinner.csproj" >
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
