@@ -74,6 +74,10 @@ class DialogueRegistry {
   }
 }
 
+/// <summary>
+/// Exception thrown when a character by the same name already exists.
+/// </summary>
+/// <param name="name"></param>
 public class CreationException(string name) : Exception {
 
   public override string ToString()
