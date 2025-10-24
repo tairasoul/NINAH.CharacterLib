@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace CharacterLib;
 
-[BepInPlugin("tairasoul.ninah.characterlib", "CharacterLib", "0.1.0")]
+[BepInPlugin("tairasoul.ninah.characterlib", "CharacterLib", "0.1.1")]
 class Plugin : BasePlugin {
   internal static ManualLogSource Logger;
   public override void Load() {
