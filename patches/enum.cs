@@ -24,7 +24,7 @@ class EnumPatches {
     string typeName = enumType.FullName;
     if (typeName == "_Code.Characters.ECharacterType") {
       List<ECharacterType> arr = [.. __result.Cast<ECharacterType>()];
-      arr.AddRange(CharacterLib.characterTypes);
+      arr.AddRange(CharacterLibrary.characterTypes);
       __result = arr.ToArray();
     }
   }
@@ -38,7 +38,7 @@ class EnumPatches {
     string typeName = enumType.FullName;
     if (typeName == "_Code.Characters.ECharacterType")
     {
-      foreach (CustomCharacter character in CharacterLib.characters) {
+      foreach (CustomCharacter character in CharacterLibrary.characters) {
         if (value.ToString() == character.CharacterType.ToString()) {
           __result = character.CharacterType.ToString();
           return false;
@@ -56,7 +56,7 @@ class EnumPatches {
     string typeName = enumType.FullName;
     if (typeName == "_Code.Characters.ECharacterType")
     {
-      foreach (CustomCharacter character in CharacterLib.characters) {
+      foreach (CustomCharacter character in CharacterLibrary.characters) {
         if (value.ToString() == character.CharacterType.ToString()) {
           __result = true;
           return false;

@@ -30,7 +30,7 @@ static class DialogCommandsInstanceCharacterRedirects {
 
   [HarmonyPrefix]
   static void CharacterMethodPrefix(ref string __0) {
-    foreach (CustomCharacter character in CharacterLib.characters) {
+    foreach (CustomCharacter character in CharacterLibrary.characters) {
       if (character.name == __0) {
         Plugin.Logger.LogDebug($"Redirecting {__0} to {character._characterType} int");
         __0 = ((int)character._characterType).ToString();
@@ -45,7 +45,7 @@ static class DialogCOmmandsInstanceMiscRedirects {
   [HarmonyPatch(nameof(DialogCommandsInstance.SetEmotion))]
   [HarmonyPrefix]
   static void SetEmotionPrefix(ref string __0) {
-    foreach (CustomCharacter character in CharacterLib.characters) {
+    foreach (CustomCharacter character in CharacterLibrary.characters) {
       if (character.EmotionRedirects.ContainsKey(__0)) {
         __0 = character.EmotionRedirects[__0];
         return;

@@ -29,7 +29,7 @@ public class CustomCharacterBuilder
       maxTalks = -1,
       _entranceTheme = ESound.None
     };
-    int enumInt = CharacterLib.GetNextEnumInt(name);
+    int enumInt = CharacterLibrary.GetNextEnumInt(name);
     if (enumInt == -1)
     {
       throw new CreationException($"Attempted to create character {name} who already exists!");

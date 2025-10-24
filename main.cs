@@ -14,8 +14,8 @@ class Plugin : BasePlugin {
     Logger = Log;
     ClassInjector.RegisterTypeInIl2Cpp<CustomCharacter>();
     ClassInjector.RegisterTypeInIl2Cpp<CharacterLibBehaviour>();
-    CharacterLib.RegisterYarnAssemblies();
-    CharacterLib.CreateRegisteredList();
+    CharacterLibrary.RegisterYarnAssemblies();
+    CharacterLibrary.CreateRegisteredList();
     GameObject logic = new("CharacterLibLogic")
     {
       hideFlags = HideFlags.DontUnloadUnusedAsset | HideFlags.HideAndDontSave

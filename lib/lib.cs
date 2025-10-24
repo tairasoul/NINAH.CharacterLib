@@ -93,7 +93,7 @@ public class CustomCharacter : CharacterSOData {
 }
 
 class CharacterLibBehaviour : MonoBehaviour {
-  readonly CharacterLib lib = new();
+  readonly CharacterLibrary lib = new();
 
   public void Start() {
     lib.Start();
@@ -107,7 +107,7 @@ class CharacterLibBehaviour : MonoBehaviour {
 class YarnContext : AssemblyLoadContext {
 }
 
-public class CharacterLib {
+public class CharacterLibrary {
   internal static ManualLogSource Log = BepInEx.Logging.Logger.CreateLogSource("CharacterLib/Registry");
   internal static ManualLogSource DialogueLog = BepInEx.Logging.Logger.CreateLogSource("CharacterLib/DialogueCompiler");
   internal static List<CustomCharacter> characters = [];
