@@ -195,7 +195,7 @@ public class CharacterLib {
   }
 
   /// <summary>
-  /// Add a dialogue from your assembly with a specific filename and content.
+  /// Add a dialogue from your assembly (or another arbitrary assembly) with a specific filename and content.
   /// </summary>
   /// <param name="locale">Locale this dialogue is for. Can be <c>en</c>, <c>ru</c>, <c>zh</c>, <c>zh-Hant</c>, <c>fr</c>, <c>de</c>, <c>ja</c>, <c>ko</c>, <c>pt-BR</c>, <c>es-AR</c> or <c>es</c></param>
   /// <param name="fileName">The file name this dialogue is registered under.</param>
