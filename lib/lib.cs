@@ -177,7 +177,11 @@ public class CharacterLib {
     YarnMethods["CompileFile"] = helper.GetMethod("CompileFile");
     YarnMethods["MergeDictionaries"] = helper.GetMethod("MergeDictionaries");
   }
-
+  
+  /// <summary>
+  /// Add a character to be registered.
+  /// </summary>
+  /// <param name="character">The CustomCharacter instance to register.</param>
   public static void AddCharacter(CustomCharacter character) {
     if (!characters.Any((v) => v.CharacterType == character.CharacterType)) {
       characters.Add(character);
@@ -186,6 +190,12 @@ public class CharacterLib {
     }
   }
 
+  /// <summary>
+  /// Add a dialogue from your assembly with a specific filename and content.
+  /// </summary>
+  /// <param name="locale">Locale this dialogue is for. Can be <c>en</c>, <c>ru</c>, <c>zh</c>, <c>zh-Hant</c>, <c>fr</c>, <c>de</c>, <c>ja</c>, <c>ko</c>, <c>pt-BR</c>, <c>es-AR</c> or <c>es</c></param>
+  /// <param name="fileName">The file name this dialogue is registered under.</param>
+  /// <param name="content">The content of the dialogue.</param>
   public static void AddDialogue(string locale, string fileName, string content, Assembly? callingAssembly = null)
   {
     callingAssembly ??= Assembly.GetCallingAssembly();
@@ -262,12 +272,13 @@ public class CharacterLib {
     }
   }
   // possible locales: en, ru, zh, zh-Hant, fr, de, ja, ko, pt-BR, es-AR, es
+  /// <summary>
+  /// Add a dialogue from your assembly's resources.
+  /// </summary>
+  /// <param name="locale">Locale this dialogue is for. Can be <c>en</c>, <c>ru</c>, <c>zh</c>, <c>zh-Hant</c>, <c>fr</c>, <c>de</c>, <c>ja</c>, <c>ko</c>, <c>pt-BR</c>, <c>es-AR</c> or <c>es</c></param>
+  /// <param name="resource">Name of the resource in your assembly.</param>
   public static void AddDialogue(string locale, string resource) {
     Assembly assembly = Assembly.GetCallingAssembly();
-    //if (shouldRegister) {
-    //  DialogueLog.LogError($"Attempted to add dialogue while game is already running ({assembly.FullName}.{resource})");
-    //  return;
-    //}
     byte[] resourceBytes = AssemblyUtils.GetResourceBytes(assembly, resource);
     if (resourceBytes.Length == 0) {
       DialogueLog.LogError($"Got no data for resource {resource} (locale {locale}) in assembly {assembly.GetName().Name}. Is the path correct?");
