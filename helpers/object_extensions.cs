@@ -1,4 +1,4 @@
-namespace tairasoul.ninah.characterlib.helpers;
+namespace CharacterLib.Helpers;
 
 public static class ObjectExtensions {
   public static T GetField<T>(this object obj, string field)

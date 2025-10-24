@@ -6,7 +6,7 @@ using _Code.Utils.UI.ImageAnimating;
 using DG.Tweening;
 using UnityEngine;
 
-namespace tairasoul.ninah.characterlib;
+namespace CharacterLib;
 
 /// <summary>
 /// Helper class for building a custom character.
@@ -223,7 +223,6 @@ public class CustomCharacterBuilder
   /// <param name="frames">Each frame of the animation.</param>
   /// <param name="framesPerSecond">How many frames to play per second.</param>
   /// <returns>CustomCharacterBuilder instance.</returns>
-
   public CustomCharacterBuilder SetHumanArmpitAnimation(EAnimationCyclingType cyclingType, IEnumerable<Sprite> frames, int framesPerSecond = 8)
   {
     AnimationData data = new(cyclingType, (Sprite[])[.. frames], framesPerSecond);
@@ -238,7 +237,6 @@ public class CustomCharacterBuilder
   /// <param name="frames">Each frame of the animation.</param>
   /// <param name="framesPerSecond">How many frames to play per second.</param>
   /// <returns>CustomCharacterBuilder instance.</returns>
-
   public CustomCharacterBuilder SetVisitorArmpitAnimation(EAnimationCyclingType cyclingType, IEnumerable<Sprite> frames, int framesPerSecond = 8)
   {
     AnimationData data = new(cyclingType, (Sprite[])[.. frames], framesPerSecond);

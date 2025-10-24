@@ -2,7 +2,7 @@ using System.Reflection;
 using _Code.DialogSystem.Commands;
 using HarmonyLib;
 
-namespace tairasoul.ninah.characterlib.patches;
+namespace CharacterLib.Patches;
 
 [HarmonyPatch(typeof(DialogCommandsInstance))]
 static class DialogCommandsInstanceCharacterRedirects {

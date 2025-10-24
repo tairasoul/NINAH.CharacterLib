@@ -5,7 +5,7 @@ using HarmonyLib;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using Il2CppSystem.Dynamic.Utils;
 
-namespace tairasoul.ninah.characterlib.patches;
+namespace CharacterLib.Patches;
 
 [HarmonyPatch(typeof(ARoom))]
 class ARoomInitPatch  {

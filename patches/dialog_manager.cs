@@ -1,9 +1,8 @@
 using _Code.Characters;
 using _Code.DialogSystem;
-using _Code.Infrastructure.Consumables;
 using HarmonyLib;
 
-namespace tairasoul.ninah.characterlib.patches;
+namespace CharacterLib.Patches;
 
 [HarmonyPatch(typeof(DialogManager))]
 class DialogManagerPatches {

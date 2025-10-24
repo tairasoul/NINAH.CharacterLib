@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace tairasoul.ninah.characterlib.helpers;
+namespace CharacterLib.Helpers;
 
 public static class GameObjectExtensions
 {

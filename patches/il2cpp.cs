@@ -1,11 +1,10 @@
 using System.Reflection;
 using _Code.Events;
-using _Code.Infrastructure.GameEvents;
 using HarmonyLib;
 using Il2CppInterop.Runtime.InteropTypes;
-using tairasoul.ninah.characterlib.helpers;
+using CharacterLib.Helpers;
 
-namespace tairasoul.ninah.characterlib.patches;
+namespace CharacterLib.Patches;
 
 // mainly to fix UnityExplorer but also to make doing this shit manually unnecessary
 

@@ -6,7 +6,7 @@ using ECM2;
 using HarmonyLib;
 using Il2CppInterop.Runtime;
 
-namespace tairasoul.ninah.characterlib.patches;
+namespace CharacterLib.Patches;
 
 [HarmonyPatch(typeof(Enum))]
 class EnumPatches {

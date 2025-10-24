@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace tairasoul.ninah.characterlib.utils;
+namespace CharacterLib.Utils;
 
 public class FileUtils {
   /// <summary>

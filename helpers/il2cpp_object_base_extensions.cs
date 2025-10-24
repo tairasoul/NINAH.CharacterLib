@@ -1,9 +1,8 @@
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using Il2CppInterop.Runtime;
 using Il2CppInterop.Runtime.InteropTypes;
 
-namespace tairasoul.ninah.characterlib.helpers;
+namespace CharacterLib.Helpers;
 
 public static class Il2cppObjectBaseExtensions {
   // because generated il2cpp interop code does some weird unboxing shit which doesnt work for ints on a valuetuple for whatever reason

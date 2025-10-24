@@ -5,7 +5,7 @@ using HarmonyLib;
 using Il2CppInterop.Runtime.Injection;
 using UnityEngine;
 
-namespace tairasoul.ninah.characterlib;
+namespace CharacterLib;
 
 [BepInPlugin("tairasoul.ninah.characterlib", "CharacterLib", "0.1.0")]
 class Plugin : BasePlugin {

@@ -1,7 +1,7 @@
 using System.Reflection;
 using UnityEngine;
 
-namespace tairasoul.ninah.characterlib.utils;
+namespace CharacterLib.Utils;
 
 public class AssemblyUtils {
   /// <summary>

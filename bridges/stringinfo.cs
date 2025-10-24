@@ -1,6 +1,6 @@
-using tairasoul.ninah.characterlib.helpers;
+using CharacterLib.Helpers;
 
-namespace tairasoul.ninah.characterlib.bridges;
+namespace CharacterLib.Bridges;
 
 class StringInfo(object mono) {
   private object mono = mono;
